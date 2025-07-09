@@ -54,6 +54,12 @@ button:active {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0.5rem;
+  background: 
+      /* radial-gradient(circle at top left, #0088ff 0%, transparent 15%), */
+      /* radial-gradient(circle at top right, #0088ff 0%, transparent 15%), */
+      radial-gradient(circle at bottom right, #0088ff 0%, transparent 50%),
+      /* radial-gradient(circle at bottom left, #0088ff 0%, transparent 10%), */
+      black;
 }
 
 .navbar{
@@ -110,12 +116,14 @@ button:active {
 .hero h1{
   text-shadow: 1px 1px 10px orange;
   font-size: 3.5rem;
+  font-weight: 1000;
 }
 
 .hero h2{
   text-shadow: 1px 4px 5px rgb(17, 221, 48);
   margin-top: 10px;
   font-size: 2rem;
+  font-weight: 900;
 }
 
 .myDetails{
@@ -148,19 +156,30 @@ button:active {
 }
 
 .aboutMe{
-  width: 60%;
+  width: 65%;
   height: 100%;
-  background: ;
+  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: center;  
-  padding: 0rem 5rem;
 }
 
 .aboutMe p{
-  font-size: 1.2rem;
-  line-height: 42px;
+  font-size: 1.4rem;
+  line-height: 45px;
+  font-weight: 100;
 }
+
+
+.colorBall{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
 
 .footer{
     width: 50%;
@@ -173,3 +192,9 @@ button:active {
     border-radius: 12px;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
