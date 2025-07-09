@@ -26,7 +26,6 @@ twitterBtn.addEventListener('click', () => {
 
 const links = document.querySelectorAll('.link');
 
-// STEP 1: Add click event to save active tab
 links.forEach(link => {
   link.addEventListener('click', function () {
     const href = this.getAttribute('href');
@@ -34,7 +33,6 @@ links.forEach(link => {
   });
 });
 
-// STEP 2: On page load, highlight the active tab
 const currentActive = localStorage.getItem('isActiveTab');
 
 links.forEach(link => {
