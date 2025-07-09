@@ -50,6 +50,7 @@ button:active {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .navbar{
@@ -85,6 +86,10 @@ button:active {
 
 .link:active{
     transform: scale(0.95);
+}
+
+.link.active {
+  border-bottom: 2px solid #0088ff;
 }
 
 .hero{

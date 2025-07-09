@@ -91,6 +91,10 @@ button:active {
     transform: scale(0.95);
 }
 
+.link.active {
+  border-bottom: 2px solid #0088ff;
+}
+
 .hero{
     width: 100%;
     height: 77%;
@@ -127,10 +131,10 @@ button:active {
 
 .myPhoto{
   border-radius: 50%;
-  width: 20%;
-  height: 80%;
+  width: 300px;
+  height: 300px;
   /* background: rebeccapurple; */
-  box-shadow: 10px 10px 100px white;
+  box-shadow: 10px 10px 600px #0088ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,20 +144,21 @@ button:active {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  box-shadow: 10px 10px 600px #0088ff;
 }
 
 .aboutMe{
   width: 60%;
   height: 100%;
-  /* background: aquamarine; */
+  background: ;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   padding: 0rem 5rem;
 }
 
 .aboutMe p{
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 42px;
 }
 
