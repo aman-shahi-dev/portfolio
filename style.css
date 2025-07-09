@@ -158,7 +158,11 @@ button:active {
 }
 
 .aboutMe p{
+<<<<<<< HEAD
   font-size: 1.2rem;
+=======
+  font-size: 1.5rem;
+>>>>>>> 09b55e2cd3cde105cee0664116f72cea614b1af3
   line-height: 42px;
 }
 
