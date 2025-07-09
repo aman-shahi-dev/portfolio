@@ -148,7 +148,7 @@ button:active {
   /* background: aquamarine; */
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0rem 5rem;
 }
 
