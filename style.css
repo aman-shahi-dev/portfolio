@@ -68,8 +68,8 @@ button:active {
 }
 
 .navbar{
-    width: 50%;
-    height: 7%;
+    width: 50vw;
+    height: 7vh;
     /* background-color: rgba(128, 128, 128, 0.42); */
     border-radius: 12px;
     display: flex;
@@ -107,8 +107,8 @@ button:active {
 }
 
 .hero{
-    width: 100%;
-    height: 77%;
+    width: 100vw;
+    height: 90vh;
     /* background-color: gray; */
     /* border: 1px solid white; */
     color: white;
@@ -175,7 +175,7 @@ button:active {
   font-weight: 100;
 }
 
-
+/* 
 .colorBall{
   border-radius: 50%;
   width: 300px;
@@ -183,22 +183,18 @@ button:active {
   position: absolute;
   top: 50%;
   right: 10%;
+  background: red;
+} */
+
+.buttons{
+  /* background: coral; */
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
 }
-
-
-.footer{
-    width: 50%;
-    height: 7%;
-    /* background-color: rgba(128, 128, 128, 0.433); */
-    /* border: 1px solid white; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-
 
 
 
