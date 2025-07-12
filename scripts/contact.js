@@ -24,3 +24,5 @@ window.addEventListener('pagehide', (event) => {
     localStorage.removeItem('isActiveTab');
   }
 });
+
+
