@@ -11,7 +11,7 @@ export const App = () => {
     return (
         <BrowserRouter>
             <Analytics />
-            <div className="bg-hatch bg-fixed">
+            <div className="bg-hatch bg-fixed font-poppins">
                 <Navbar />
                 <Container>
                     <Routes>
