@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --background-image-hatch: repeating-linear-gradient(
+        135deg,
+        transparent,
+        transparent,
+        #ffffff 1px,
+        #b4b4b4 3px
+    );
+}
