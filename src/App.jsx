@@ -5,10 +5,12 @@ import { Blogs } from "./pages/Blogs";
 import { Contact } from "./pages/Contact";
 import { Container } from "./components/Container";
 import { Navbar } from "./components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const App = () => {
     return (
         <BrowserRouter>
+            <Analytics />
             <div className="bg-hatch bg-fixed">
                 <Navbar />
                 <Container>
