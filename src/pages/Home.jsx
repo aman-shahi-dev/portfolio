@@ -3,10 +3,12 @@ import {
   IconBrandGithubFilled,
   IconBrandXFilled,
   IconRosetteDiscountCheckFilled,
+  IconArrowUpRight,
 } from "@tabler/icons-react";
 import { Heading } from "../components/Heading";
-import { projects } from "../constants/projects";
+import { homeProjects } from "../constants/homeProjects";
 import { ProjectCard } from "../components/ProjectCard";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -64,12 +66,20 @@ export const Home = () => {
       {/* PROJECTS SECTION */}
       <div>
         <div className="p-2 mt-4 md:mt-6 w-full flex flex-col items-start justify-start">
-          <Heading className="mb-2 md:mb-4">Projects</Heading>
+          <Heading className="mb-4 bg-hatch py-1 px-4 shadow-md">
+            Projects
+          </Heading>
           <div className="gap-6 w-full grid grid-cols-1 md:grid-cols-2">
-            {projects.map((project, idx) => (
+            {homeProjects.map((project, idx) => (
               <ProjectCard project={project} key={idx || project.title} />
             ))}
           </div>
+          <Link
+            to="/projects"
+            className="select-none px-4 py-2 mt-4 md:mt-6 mx-auto bg-black text-white rounded-md hover:bg-neutral-700 hover:cursor-pointer active:scale-95 transition duration-300 gap-1 flex items-center justify-center"
+          >
+            View All Projects <IconArrowUpRight />
+          </Link>
         </div>
       </div>
       {/* BLOG SECTION */}
