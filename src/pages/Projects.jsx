@@ -1,7 +1,9 @@
 import { allProjects } from "../constants/allProjects";
 import { ProjectCard } from "../components/ProjectCard";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 export const Projects = () => {
+  useScrollToTop();
   return (
     <div className="flex flex-col flex-1 h-full px-2 py-6">
       <div className="w-full flex flex-col items-start justify-start">

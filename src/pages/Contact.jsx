@@ -1,3 +1,6 @@
+import useScrollToTop from "../hooks/useScrollToTop";
+
 export const Contact = () => {
-    return <div>Contact</div>;
+  useScrollToTop();
+  return <div>Contact</div>;
 };

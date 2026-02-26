@@ -9,8 +9,10 @@ import { Heading } from "../components/Heading";
 import { homeProjects } from "../constants/homeProjects";
 import { ProjectCard } from "../components/ProjectCard";
 import { Link } from "react-router-dom";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 export const Home = () => {
+  useScrollToTop();
   return (
     <div className=" flex flex-col flex-1 h-full px-2 py-2 md:py-6">
       {/* HOME SECTION */}

@@ -1,3 +1,6 @@
+import useScrollToTop from "../hooks/useScrollToTop";
+
 export const Blogs = () => {
-    return <div>Blogs</div>;
+  useScrollToTop();
+  return <div>Blogs</div>;
 };
