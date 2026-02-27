@@ -6,8 +6,8 @@ export const Projects = () => {
   useScrollToTop();
   return (
     <div className="flex flex-col flex-1 h-full px-2 py-6">
-      <div className="w-full flex flex-col items-start justify-start">
-        <h1 className="text-2xl md:text-4xl font-semibold mx-auto mb-4 md:mb-6 bg-hatch py-1 px-6 select-none shadow-md">
+      <div className="w-full flex flex-col items-start justify-start px-4">
+        <h1 className="text-2xl md:text-4xl font-semibold mx-auto mb-4 md:mb-6 bg-hatch py-1 px-6 select-none shadow-md border border-neutral-200 rounded-md">
           My Projects
         </h1>
         <div className="gap-6 w-full grid grid-cols-1 md:grid-cols-2">

@@ -4,19 +4,23 @@ import {
   IconBrandXFilled,
   IconRosetteDiscountCheckFilled,
   IconArrowUpRight,
+  IconBrandTwitterFilled,
 } from "@tabler/icons-react";
 import { Heading } from "../components/Heading";
 import { homeProjects } from "../constants/homeProjects";
 import { ProjectCard } from "../components/ProjectCard";
 import { Link } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
+import { BlogCard } from "../components/BlogCard";
+import { homeBlogs } from "../constants/homeBlogs";
+import { DividingLine } from "../components/DividingLine";
 
 export const Home = () => {
-  useScrollToTop();
+  // useScrollToTop();
   return (
-    <div className=" flex flex-col flex-1 h-full px-2 py-2 md:py-6">
+    <div className=" flex flex-col flex-1 h-full">
       {/* HOME SECTION */}
-      <div>
+      <div className="px-4 py-2 md:py-6">
         <div className="flex items-center justify-center gap-4 md:gap-10 p-2">
           <img
             src="./me-anime-dp-crop.png"
@@ -65,12 +69,12 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
       {/* PROJECTS SECTION */}
-      <div>
-        <div className="p-2 mt-4 md:mt-6 w-full flex flex-col items-start justify-start">
-          <Heading className="mb-4 bg-hatch py-1 px-4 shadow-md">
-            Projects
-          </Heading>
+      <DividingLine />
+      <div className="px-4 py-2 md:py-6">
+        <div className="p-2  w-full flex flex-col items-start justify-start">
+          <Heading className="mb-4 py-1 px-4 text-shadow-lg">Projects</Heading>
           <div className="gap-6 w-full grid grid-cols-1 md:grid-cols-2">
             {homeProjects.map((project, idx) => (
               <ProjectCard project={project} key={idx || project.title} />
@@ -84,16 +88,55 @@ export const Home = () => {
           </Link>
         </div>
       </div>
+
       {/* BLOG SECTION */}
-      <div>
-        <div className="border p-2 mt-2 md:mt-6 w-full flex flex-col items-start justify-start">
-          <Heading>Blogs</Heading>
+      <DividingLine />
+      <div className="px-4 py-2 md:py-6">
+        <div className="p-2 w-full flex flex-col items-start justify-start">
+          <Heading className="mb-4 py-1 px-4 text-shadow-lg">Blogs</Heading>
+          <div className="gap-6 flex flex-col w-full">
+            {homeBlogs.map((blog, idx) => (
+              <BlogCard blog={blog} key={idx || blog.title} />
+            ))}
+          </div>
+          <Link
+            to="/blogs"
+            className="select-none px-4 py-2 mt-4 md:mt-6 mx-auto bg-black text-white rounded-md hover:bg-neutral-700 hover:cursor-pointer active:scale-95 transition duration-300 gap-1 flex items-center justify-center"
+          >
+            View All Blogs <IconArrowUpRight />
+          </Link>
         </div>
       </div>
       {/* CONTACT SECTION */}
-      <div>
-        <div className="border p-2 mt-2 md:mt-6 w-full flex flex-col items-start justify-start">
-          <Heading>Contact Me</Heading>
+      <DividingLine />
+      <div className="px-4 py-2 md:py-6">
+        <div className="p-2 w-full flex flex-col items-start justify-start">
+          <div className="flex flex-wrap items-center justify-center gap-4 w-full">
+            <a
+              target="_blank"
+              href="https://github.com/aman-shahi-dev"
+              className="p-2 active:scale-95 rounded-md border border-neutral-300 text-neutral-500 hover:text-black transition duration-300"
+            >
+              <IconBrandGithubFilled />
+            </a>
+            <a
+              target="_blank"
+              href="https://twitter.com/TheBinaryCoder0"
+              className="p-2 active:scale-95 rounded-md border border-neutral-300 text-neutral-500 hover:text-black transition duration-300"
+            >
+              <IconBrandXFilled />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/aman-shahi-dev/"
+              className="p-2 active:scale-95 rounded-md border border-neutral-300 text-neutral-500 hover:text-black transition duration-300"
+            >
+              <IconBrandLinkedinFilled />
+            </a>
+          </div>
+          <p className="text-sm text-shadow-lg text-center w-full mt-4">
+            Build with 💗 by Aman
+          </p>
         </div>
       </div>
     </div>

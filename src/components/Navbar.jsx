@@ -28,7 +28,7 @@ export const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className="text-neutral-600 hover:text-neutral-700 cursor-pointer"
+              className="text-neutral-600 hover:text-neutral-700 cursor-pointer hidden"
             >
               Contact
             </Link>
