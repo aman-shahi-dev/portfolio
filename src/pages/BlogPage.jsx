@@ -23,7 +23,7 @@ export const BlogPage = () => {
       <h2 className="w-full text-center text-sm text-wrap md:text-lg">
         {blog.description}
       </h2>
-      <p className="w-full p-2">{blog.content}</p>
+      <p className="w-full px-4 py-2">{blog.content}</p>
     </div>
   );
 };

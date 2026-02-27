@@ -26,17 +26,7 @@ export const homeBlogs = [
       "Level up your type safety with Omit, Pick, and Template Literal Types.",
     content:
       "TypeScript isn't just about adding :string to everything. Real power comes from using mapped types and conditional types. For instance, using Record<string, unknown> is much safer than using 'any' when you don't know the exact shape of an incoming API response but know it will be an object.",
-    datePublished: "21 Feb 2026",
+    datePublished: "28 Feb 2026",
     urlPath: "/typescript-utility-types",
-  },
-  {
-    id: "blog-nextjs-performance",
-    title: "Optimizing Next.js for Core Web Vitals",
-    description:
-      "Strategies to hit 100/100 on Lighthouse while maintaining a feature-rich app.",
-    content:
-      "Performance in Next.js starts with the choice between Server and Client components. By pushing logic to the server, we reduce the JavaScript bundle sent to the browser. Additionally, utilizing the next/image component for automatic WebP conversion and lazy loading can drastically improve your Largest Contentful Paint (LCP).",
-    datePublished: "22 Feb 2026",
-    urlPath: "/nextjs-performance",
   },
 ];
