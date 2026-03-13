@@ -2,7 +2,8 @@ export const homeProjects = [
   {
     title: "Bookmarker",
     img: "./bookmarker-image.png",
-    description: "description about Bookmarker",
+    description:
+      "Turns YouTube playlists into structured, trackable learning courses.",
     liveLink: "https://bookmarker.amanshahi.me/",
     githubRepoLink: "https://github.com/aman-shahi-dev/bookmarker",
     number: 1,
@@ -10,7 +11,8 @@ export const homeProjects = [
   {
     title: "Shoppex",
     img: "./shoppex-image.png",
-    description: "description about Bookmarker",
+    description:
+      "Shoppex is an online store showcasing collections with cart and authentication.",
     liveLink: "https://aman-shahi-dev.github.io/shoppex/",
     githubRepoLink: "https://github.com/aman-shahi-dev/shoppex",
     number: 2,
@@ -18,7 +20,8 @@ export const homeProjects = [
   {
     title: "Blog App",
     img: "./blog-app-image.png",
-    description: "description about Bookmarker",
+    description:
+      "A minimalist blog platform requiring login to read user posts",
     liveLink: "https://blog-app-thebinarycoder.vercel.app/",
     githubRepoLink: "https://github.com/aman-shahi-dev/blog-app",
     number: 3,
@@ -26,7 +29,7 @@ export const homeProjects = [
   {
     title: "Defender",
     img: "./defender-image.png",
-    description: "description about Bookmarker",
+    description: "A sleek Land Rover Defender showcase highlighting features, gallery, and design",
     liveLink: "https://aman-shahi-dev.github.io/defender/",
     githubRepoLink: "https://github.com/aman-shahi-dev/defender",
     number: 4,

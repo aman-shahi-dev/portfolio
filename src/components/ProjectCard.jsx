@@ -21,7 +21,7 @@ export const ProjectCard = ({ project }) => {
       </div>
       <div className="flex w-full flex-col items-center justify-start bg-white p-2">
         <h1 className="text-lg md:text-xl">{project.title}</h1>
-        <p className="md:text-md mt-2 mb-1 text-sm text-wrap text-neutral-500">
+        <p className="md:text-md mt-2 mb-1 px-2 text-center text-sm text-wrap text-neutral-500">
           {project.description}
         </p>
         <div className="mt-2 flex w-full items-center justify-center gap-4">
