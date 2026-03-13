@@ -2,42 +2,42 @@ import { IconBrandGithubFilled, IconExternalLink } from "@tabler/icons-react";
 
 export const ProjectCard = ({ project }) => {
   return (
-    <div className="flex items-center justify-start flex-col p-4 bg-hatch shadow-md border border-neutral-200 rounded-md">
+    <div className="bg-hatch flex flex-col items-center justify-start rounded-md border border-neutral-200 p-4 shadow-md">
       <div
         style={{
           backgroundImage: `url(./card-bg-${project.number}.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className={`w-full h-40 md:h-50 border-2 rounded-b-none border-neutral-300 rounded-md flex items-end justify-center overflow-hidden md:grayscale-100 md:hover:grayscale-0 transition duration-300`}
+        className={`group flex h-40 w-full items-end justify-center overflow-hidden rounded-md rounded-b-none border-2 border-neutral-300 transition duration-300 md:h-50 md:grayscale-100 md:hover:grayscale-0`}
       >
-        <div className="border-b-0 border-2 md:border-b-0 md:border-3 hover:scale-105 rounded-md rounded-b-none border-neutral-300 w-3/4 h-3/4 object-cover object-center transition duration-300">
+        <div className="h-3/4 w-3/4 rounded-lg rounded-b-none border-2 border-b-0 border-neutral-300 object-cover object-center transition duration-300 group-hover:scale-110 md:border-3 md:border-b-0">
           <img
             src={project.img}
             alt=""
-            className="rounded-md rounded-b-none w-full h-full object-cover object-center transition"
+            className="h-full w-full rounded-md rounded-b-none object-cover object-center transition duration-300"
           />
         </div>
       </div>
-      <div className="w-full flex flex-col items-center justify-start p-2 bg-white">
+      <div className="flex w-full flex-col items-center justify-start bg-white p-2">
         <h1 className="text-lg md:text-xl">{project.title}</h1>
-        <p className="text-sm text-wrap mt-2 mb-1 md:text-md text-neutral-500">
+        <p className="md:text-md mt-2 mb-1 text-sm text-wrap text-neutral-500">
           {project.description}
         </p>
-        <div className="flex items-center justify-center gap-4 mt-2 w-full">
+        <div className="mt-2 flex w-full items-center justify-center gap-4">
           <a
             target="_blank"
             href={project.liveLink}
-            className="select-auto px-3 py-1 bg-black text-white rounded-md hover:bg-neutral-700 hover:cursor-pointer active:scale-95 transition duration-300 flex items-center justify-center gap-1"
+            className="flex items-center justify-center gap-1 rounded-md bg-black px-3 py-1 text-white transition duration-300 select-auto hover:cursor-pointer hover:bg-neutral-700 active:scale-95"
           >
-            Live Link <IconExternalLink size={20}/>
+            Live Link <IconExternalLink size={20} />
           </a>
           <a
             target="_blank"
             href={project.githubRepoLink}
-            className="select-none px-3 py-1 bg-black text-white rounded-md hover:bg-neutral-700 hover:cursor-pointer active:scale-95 transition duration-300 flex items-center justify-center gap-1"
+            className="flex items-center justify-center gap-1 rounded-md bg-black px-3 py-1 text-white transition duration-300 select-none hover:cursor-pointer hover:bg-neutral-700 active:scale-95"
           >
-            Github <IconBrandGithubFilled size={20}/>
+            Github <IconBrandGithubFilled size={20} />
           </a>
         </div>
       </div>

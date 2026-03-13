@@ -11,8 +11,8 @@ export const Blogs = () => {
   return (
     <div className="flex h-full flex-1 flex-col px-2 py-6">
       <div className="flex w-full flex-col items-start justify-start px-4">
-        <h1 className="bg-hatch mx-auto mb-4 rounded-md border border-neutral-200 px-6 py-1 text-2xl font-semibold shadow-md select-none md:mb-6 md:text-4xl">
-          My Blogs
+        <h1 className="mx-auto mb-4 rounded-md border border-neutral-200 px-6 py-1 text-2xl font-semibold select-none md:mb-6 md:text-4xl">
+          Blogs
         </h1>
         <div className="flex w-full flex-col gap-6">
           {sortedBlogs.map((blog, idx) => (

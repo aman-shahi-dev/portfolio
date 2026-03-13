@@ -5,12 +5,12 @@ import useScrollToTop from "../hooks/useScrollToTop";
 export const Projects = () => {
   useScrollToTop();
   return (
-    <div className="flex flex-col flex-1 h-full px-2 py-6">
-      <div className="w-full flex flex-col items-start justify-start px-4">
-        <h1 className="text-2xl md:text-4xl font-semibold mx-auto mb-4 md:mb-6 bg-hatch py-1 px-6 select-none shadow-md border border-neutral-200 rounded-md">
-          My Projects
+    <div className="flex h-full flex-1 flex-col px-2 py-6">
+      <div className="flex w-full flex-col items-start justify-start px-4">
+        <h1 className="mx-auto mb-4 rounded-md border border-neutral-200 px-6 py-1 text-2xl font-semibold select-none md:mb-6 md:text-4xl">
+          Projects
         </h1>
-        <div className="gap-6 w-full grid grid-cols-1 md:grid-cols-2">
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
           {allProjects.map((project, idx) => (
             <ProjectCard project={project} key={idx || project.title} />
           ))}

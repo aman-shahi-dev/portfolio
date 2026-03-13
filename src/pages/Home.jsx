@@ -30,7 +30,8 @@ export const Home = () => {
           <img
             src="./me-anime-dp-crop.png"
             alt=""
-            className="h-25 w-25 rounded-lg object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:h-40 md:w-40"
+            className="h-20 w-20 rounded-lg  shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:h-28 md:w-34"
+            style={{ imageRendering: "auto" }}
           />
           <div className="flex flex-col items-center justify-center gap-1 py-4">
             <h1 className="flex items-center gap-1 text-2xl font-semibold tracking-tight md:text-4xl">
