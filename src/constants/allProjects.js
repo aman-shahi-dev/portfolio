@@ -1,13 +1,23 @@
 export const allProjects = [
   {
+    title: "CodeStats",
+    img: "./codestats-image.png",
+    description:
+      "Unify your Codeforces, LeetCode, and AtCoder stats in one dashboard.",
+    liveLink: "https://code-stats-eight.vercel.app/",
+    githubRepoLink: "https://github.com/aman-shahi-dev/CodeStats",
+    number: 8,
+  },
+  {
     title: "Bookmarker",
     img: "./bookmarker-image.png",
     description:
       "Turns YouTube playlists into structured, trackable learning courses.",
     liveLink: "https://bookmarker.amanshahi.me/",
     githubRepoLink: "https://github.com/aman-shahi-dev/bookmarker",
-    number: 1,
+    number: 2,
   },
+
   {
     title: "Shoppex",
     img: "./shoppex-image.png",
@@ -15,7 +25,7 @@ export const allProjects = [
       "Shoppex is an online store showcasing collections with cart and authentication.",
     liveLink: "https://aman-shahi-dev.github.io/shoppex/",
     githubRepoLink: "https://github.com/aman-shahi-dev/shoppex",
-    number: 2,
+    number: 3,
   },
   {
     title: "Blog App",
@@ -24,7 +34,7 @@ export const allProjects = [
       "A minimalist blog platform requiring login to read user posts",
     liveLink: "https://blog-app-thebinarycoder.vercel.app/",
     githubRepoLink: "https://github.com/aman-shahi-dev/blog-app",
-    number: 3,
+    number: 4,
   },
   {
     title: "Defender",
@@ -33,7 +43,7 @@ export const allProjects = [
       "A sleek Land Rover Defender showcase highlighting features, gallery, and design",
     liveLink: "https://aman-shahi-dev.github.io/defender/",
     githubRepoLink: "https://github.com/aman-shahi-dev/defender",
-    number: 4,
+    number: 5,
   },
   {
     title: "3D Button",
@@ -42,6 +52,6 @@ export const allProjects = [
       "A minimal webpage showcasing a single interactive 3D hover button",
     liveLink: "https://aman-shahi-dev.github.io/3d-button/",
     githubRepoLink: "https://github.com/aman-shahi-dev/3d-button",
-    number: 5,
+    number: 6,
   },
 ];
