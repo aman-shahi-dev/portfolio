@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 mx-auto flex h-16 w-full max-w-4xl items-center justify-center border-r border-b border-l border-neutral-300 bg-white px-4">
-      <div className="flex max-w-2xl flex-1 items-center justify-between rounded-full bg-white px-4 py-2 shadow-[0px_0px_0px_2px_rgba(0,0,0,0.1)] backdrop-blur-sm md:px-10">
+      <div className="flex max-w-2xl flex-1 items-center justify-between rounded-full bg-white px-4 py-2 shadow-[0px_0px_5px_1px_rgba(0,0,0,0.2)] backdrop-blur-sm md:px-10">
         <Link to="/" className="text-sm font-bold md:text-xl">
           <img
             src="./as-logo.svg"

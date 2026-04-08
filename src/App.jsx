@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Analytics />
-      <div className="bg-hatch bg-fixed font-inter">
+      <div className="bg-hatch font-inter bg-fixed">
         <Navbar />
         <Container>
           <Routes>

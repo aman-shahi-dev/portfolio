@@ -30,7 +30,7 @@ export const Home = () => {
           <img
             src="./me-anime-dp-crop.png"
             alt=""
-            className="h-20 w-20 rounded-lg  shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:h-28 md:w-34"
+            className="h-16 w-20 rounded-lg object-contain object-center p-1 shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:h-34 md:w-40 md:p-2"
             style={{ imageRendering: "auto" }}
           />
           <div className="flex flex-col items-center justify-center gap-1 py-4">
@@ -53,21 +53,21 @@ export const Home = () => {
           <div className="text-md mt-4 flex items-center justify-center gap-4 text-center md:gap-6 md:text-lg">
             <a
               target="_blank"
-              className="flex w-fit cursor-pointer items-center justify-center gap-1 text-neutral-500 hover:text-neutral-700 active:scale-95"
+              className="flex w-fit cursor-pointer items-center justify-center gap-1 rounded border border-neutral-300 bg-neutral-100 px-3 py-1 text-neutral-500 transition-all duration-300 ease-in-out hover:bg-neutral-200 hover:text-neutral-700 active:scale-95"
               href="https://www.linkedin.com/in/aman-shahi-dev/"
             >
               <IconBrandLinkedinFilled /> <span>LinkedIn</span>
             </a>
             <a
               target="_blank"
-              className="flex w-fit cursor-pointer items-center justify-center gap-1 text-neutral-500 hover:text-neutral-700 active:scale-95"
+              className="flex w-fit cursor-pointer items-center justify-center gap-1 rounded border border-neutral-300 bg-neutral-100 px-3 py-1 text-neutral-500 transition-all duration-300 ease-in-out hover:bg-neutral-200 hover:text-neutral-700 active:scale-95"
               href="https://github.com/aman-shahi-dev"
             >
               <IconBrandGithubFilled /> <span>Github</span>
             </a>
             <a
               target="_blank"
-              className="flex w-fit cursor-pointer items-center justify-center gap-1 text-neutral-500 hover:text-neutral-700 active:scale-95"
+              className="flex w-fit cursor-pointer items-center justify-center gap-1 rounded border border-neutral-300 bg-neutral-100 px-3 py-1 text-neutral-500 transition-all duration-300 ease-in-out hover:bg-neutral-200 hover:text-neutral-700 active:scale-95"
               href="https://x.com/TheBinaryCoder0"
             >
               <IconBrandXFilled /> <span>Twitter</span>
@@ -140,8 +140,8 @@ export const Home = () => {
               <IconBrandLinkedinFilled />
             </a>
           </div>
-          <p className="mt-4 w-full text-center text-sm text-shadow-lg">
-            Build with 💗 by Aman
+          <p className="mx-auto mt-4 w-fit rounded-full border border-neutral-300 bg-neutral-100 px-4 py-1 text-center text-sm text-shadow-lg">
+            Build with ❤️ by Aman
           </p>
         </div>
       </div>
